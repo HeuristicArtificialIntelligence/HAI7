@@ -8,8 +8,6 @@ const __dirname = dirname(__filename);
 const nextConfig = {
   output: "export",
   trailingSlash: true,
-  basePath: '/HAI7',
-  assetPrefix: '/HAI7',
   images: {
     unoptimized: true,
   },

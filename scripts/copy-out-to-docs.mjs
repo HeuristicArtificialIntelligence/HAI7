@@ -12,4 +12,5 @@ if (!fs.existsSync(outDir)) {
 fs.rmSync(docsDir, { recursive: true, force: true });
 fs.cpSync(outDir, docsDir, { recursive: true });
 fs.writeFileSync(path.join(docsDir, ".nojekyll"), "");
-console.log("Copied static export from out/ to docs/ and added .nojekyll.");
+fs.writeFileSync(path.join(docsDir, "CNAME"), "hai7.ai\n");
+console.log("Copied static export from out/ to docs/ and added .nojekyll and CNAME.");
