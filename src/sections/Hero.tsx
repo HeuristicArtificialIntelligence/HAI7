@@ -3,7 +3,6 @@
 import robotImg from "../assets/images/dalle-path-1.jpg";
 // import Brain3D from "@/components/Brain3D";
 import Image from 'next/image';
-import { Button } from "../components/Button";
 import underlineImage from "../assets/images/underline.svg?url";
 import Loader from "../assets/images/loader-animated.svg"
 import { Orbit } from "../components/Orbit";
@@ -37,7 +36,7 @@ export const useMousePosition = () => {
       clientX.set(e.clientX);
       clientY.set(e.clientY);
     })
-  },[]);
+  },[clientX, clientY]);
 
   return { xProgress, yProgress };
 };

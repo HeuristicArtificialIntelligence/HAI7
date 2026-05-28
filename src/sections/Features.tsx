@@ -10,7 +10,6 @@ import jiraLogo from "../assets/images/jira-logo.png";
 import gcpLogo from "../assets/images/gcp-logo.png";
 import { SectionBorder } from "../components/SectionBorder";
 import { SectionContent } from "./SectionContent";
-import { Button } from "../components/Button";
 import { Orbit } from "../components/Orbit";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";

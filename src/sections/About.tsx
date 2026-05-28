@@ -81,7 +81,7 @@ Hai7.ai is a digital-native startup focused on building intelligent, scalable AI
                 >
                 Hai7.ai
                 </a>{" "}
-               is currently in stealth mode, but all our products are fully functional and accessible via private URLs. We're focused on onboarding early partners and refining user experience before public launch.
+               is currently in stealth mode, but all our products are fully functional and accessible via private URLs. We&apos;re focused on onboarding early partners and refining user experience before public launch.
             </p>
           </div>
         </div>
