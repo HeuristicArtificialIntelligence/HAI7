@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from "react";
 import { Button, ButtonProps } from "../components/Button";
@@ -49,7 +49,7 @@ export const Header = () => {
     <div className="container">
       <div className="h-18 lg:h-20 flex justify-between items-center">
         <div className="flex gap-4 items-center">
-          <a href="/"><img src="/hai7-white-full.png" alt="HAI7 Logo" className="w-100 h-10"/></a>
+          <a href="/HAI7/"><img src="/HAI7/hai7-white-full.png" alt="HAI7 Logo" className="w-100 h-10"/></a>
           {/* <div className="font-extrabold text-2xl">HAI7.ai</div> */}
         </div>
           <div className="h-full hidden lg:block">
@@ -147,3 +147,4 @@ export const Header = () => {
 )};
 
 export default Header;
+

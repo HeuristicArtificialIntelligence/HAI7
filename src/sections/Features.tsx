@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import slackLogo from "../assets/images/slack-logo.png";
 import dockerLogo from "../assets/images/docker-logo.png";
@@ -94,7 +94,7 @@ export const Features = () => {
                   <Orbit className="size-[180px] md:size-[300px]" />
                 </div>
                 <div className="absolute-center">
-                <img src="/hai7-white-full.png" alt="HAI7 Logo" className="w-100 h-100"/>
+                <img src="/HAI7/hai7-white-full.png" alt="HAI7 Logo" className="w-100 h-100"/>
                 </div>
                 {logos.map(({ src, alt, rotate })=>(
 
@@ -140,3 +140,4 @@ export const Features = () => {
 )};
 
 export default Features;
+
