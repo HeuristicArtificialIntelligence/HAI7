@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="g" x1="18" y1="12" x2="46" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  <!-- No background rect — transparent for browser tabs -->
+  <g font-family="Arial Black, Impact, Helvetica, sans-serif" font-weight="900">
+    <text x="3" y="46" font-size="36" fill="#FFFFFF">H</text>
+    <text x="24" y="46" font-size="36" fill="url(#g)">AI</text>
+    <text x="48" y="46" font-size="36" fill="#FFFFFF">7</text>
+  </g>
+  <circle cx="45.5" cy="16.5" r="5" fill="#38BDF8"/>
+  <circle cx="45.5" cy="16.5" r="2.4" fill="#0EA5E9"/>
+  <ellipse cx="44.2" cy="15.6" rx="1.6" ry="1" fill="#E0F2FE" opacity="0.85"/>
+</svg>
