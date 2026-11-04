@@ -63,123 +63,34 @@
         content="HAI7 builds enterprise AI agents, workflow automations, and intelligent platforms — production-ready proof-of-concepts in 7 days with heuristic AI engineering." />
     <meta name="twitter:image" content="https://hai7.ai/og-image.jpg" />
 
-    <!-- Preconnect & DNS-Prefetch for CDN & Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Preconnect for Font Awesome CDN (fonts ship with the app bundle via @fontsource) -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
 
-    <!-- LCP hero mark (also referenced from Hero.tsx via /hai7-ai-mark.png) -->
+    <!-- LCP hero mark (also referenced from Hero.tsx) -->
     <link rel="preload" href="/hai7-ai-mark.webp" as="image" type="image/webp" fetchpriority="high" />
-    <link rel="preload" href="https://fonts.gstatic.com/s/outfit/v15/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4E.ttf" as="font" type="font/ttf" />
-
-    <!-- Fonts -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" as="style" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
-        rel="stylesheet" />
 
     <!-- Font Awesome — non-blocking stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'" />
 
-    <!-- Schema.org JSON-LD Structured Data -->
+    <!-- Schema.org JSON-LD (one @type per block for audit tools) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://hai7.ai/#organization",
-          "name": "HAI7",
-          "legalName": "HAI7 Heuristic Artificial Intelligence",
-          "url": "https://hai7.ai/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://hai7.ai/hai7-logo-brand.png",
-            "caption": "HAI7 Logo"
-          },
-          "description": "HAI7 builds and deploys enterprise-grade AI agents, workflow automations, and intelligent applications with rapid 7-day POC delivery.",
-          "founder": {
-            "@type": "Person",
-            "name": "Rian Hussain",
-            "sameAs": "https://www.linkedin.com/in/rian-hussain-576a62287/"
-          },
-          "sameAs": [
-            "https://www.linkedin.com/company/hai7/",
-            "https://twitter.com/hai7ai",
-            "https://facebook.com/hai7ai"
-          ],
-          "contactPoint": [
-            {
-              "@type": "ContactPoint",
-              "telephone": "+91-91488-92907",
-              "contactType": "sales",
-              "email": "contact@hai7.ai",
-              "availableLanguage": ["English"]
-            }
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://hai7.ai/#website",
-          "url": "https://hai7.ai/",
-          "name": "HAI7",
-          "publisher": {
-            "@type": "Organization",
-            "@id": "https://hai7.ai/#organization"
-          },
-          "description": "Production-ready enterprise AI solutions delivered in 7 days."
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://hai7.ai/#software",
-          "name": "HAI7 AI Suite",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "All",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD",
-            "description": "Free 7-Day Proof of Concept"
-          },
-          "creator": {
-            "@type": "Organization",
-            "@id": "https://hai7.ai/#organization"
-          }
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://hai7.ai/#webpage",
-          "url": "https://hai7.ai/",
-          "name": "HAI7 - Enterprise AI Solutions in 7 Days",
-          "description": "HAI7 builds enterprise AI agents, workflow automations, and intelligent platforms — production-ready proof-of-concepts in 7 days with heuristic AI engineering.",
-          "dateModified": "2026-11-04",
-          "inLanguage": "en",
-          "isPartOf": { "@type": "WebSite", "@id": "https://hai7.ai/#website" },
-          "about": { "@type": "Organization", "@id": "https://hai7.ai/#organization" },
-          "author": { "@id": "https://hai7.ai/#author" }
-        },
-        {
-          "@type": "Person",
-          "@id": "https://hai7.ai/#author",
-          "name": "Rian Hussain",
-          "jobTitle": "Founder & AI Engineer",
-          "description": "Founder of HAI7. Builds heuristic AI systems, enterprise LLM agents, RAG platforms, and production POCs delivered in focused 7-day sprints.",
-          "knowsAbout": [
-            "Enterprise artificial intelligence",
-            "Large language models",
-            "Retrieval-augmented generation",
-            "Cloud-native software delivery"
-          ],
-          "worksFor": { "@id": "https://hai7.ai/#organization" },
-          "sameAs": "https://www.linkedin.com/in/rian-hussain-576a62287/"
-        }
-      ]
-    }
+    {"@context":"https://schema.org","@type":"Organization","@id":"https://hai7.ai/#organization","name":"HAI7","legalName":"HAI7 Heuristic Artificial Intelligence","url":"https://hai7.ai/","logo":{"@type":"ImageObject","url":"https://hai7.ai/hai7-logo-brand.png","caption":"HAI7 Logo"},"description":"HAI7 builds and deploys enterprise-grade AI agents, workflow automations, and intelligent applications with rapid 7-day POC delivery.","founder":{"@id":"https://hai7.ai/#author"},"sameAs":["https://www.linkedin.com/company/hai7/","https://twitter.com/hai7ai","https://facebook.com/hai7ai"],"contactPoint":[{"@type":"ContactPoint","telephone":"+91-91488-92907","contactType":"sales","email":"contact@hai7.ai","availableLanguage":["English"]}]}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","@id":"https://hai7.ai/#website","url":"https://hai7.ai/","name":"HAI7","publisher":{"@id":"https://hai7.ai/#organization"},"description":"Production-ready enterprise AI solutions delivered in 7 days."}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"SoftwareApplication","@id":"https://hai7.ai/#software","name":"HAI7 AI Suite","applicationCategory":"BusinessApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free 7-Day Proof of Concept"},"creator":{"@id":"https://hai7.ai/#organization"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebPage","@id":"https://hai7.ai/#webpage","url":"https://hai7.ai/","name":"HAI7 - Enterprise AI Solutions in 7 Days","description":"HAI7 builds enterprise AI agents, workflow automations, and intelligent platforms — production-ready proof-of-concepts in 7 days with heuristic AI engineering.","dateModified":"2026-11-04","inLanguage":"en","isPartOf":{"@id":"https://hai7.ai/#website"},"about":{"@id":"https://hai7.ai/#organization"},"author":{"@id":"https://hai7.ai/#author"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","@id":"https://hai7.ai/#author","name":"Rian Hussain","jobTitle":"Founder and AI Engineer","description":"Founder of HAI7. Builds heuristic AI systems, enterprise LLM agents, RAG platforms, and production POCs delivered in focused 7-day sprints.","knowsAbout":["Enterprise artificial intelligence","Large language models","Retrieval-augmented generation","Cloud-native software delivery"],"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Professional experience","name":"Enterprise AI engineering and LLM agent delivery"},{"@type":"EducationalOccupationalCredential","credentialCategory":"Professional experience","name":"Secure cloud integration (Azure, AWS, Google Cloud)"}],"worksFor":{"@id":"https://hai7.ai/#organization"},"sameAs":"https://www.linkedin.com/in/rian-hussain-576a62287/"}
     </script>
   
-  <link rel="stylesheet" href="/assets/style-Cib7DiTn.css">
+  <link rel="stylesheet" href="/assets/style-DkeSSkgI.css">
 </head>
 
 <body>
@@ -192,7 +103,7 @@
             <a href="/terms-of-service">Terms of Service</a>
             <a href="/terms-of-service#editorial">Editorial Policy</a>
             <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://hai7.ai/">Share on LinkedIn</a>
-            <a href="https://twitter.com/intent/tweet?url=https://hai7.ai/">Share on X</a>
+            <a href="https://twitter.com/intent/tweet?url=https://hai7.ai/">Share HAI7 on X (Twitter)</a>
         </nav>
         <p>
             By Rian Hussain, Founder — AI engineering and enterprise delivery.
@@ -222,7 +133,7 @@
     </noscript>
 
     <div id="app"></div>
-  <script defer src="/assets/app-iuTonZrN.js"></script>
+  <script defer src="/assets/app-BxBdRDWM.js"></script>
 </body>
 
 </html>
