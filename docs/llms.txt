@@ -1,0 +1,24 @@
+# HAI7 (Heuristic Artificial Intelligence)
+
+> HAI7 builds and deploys enterprise-grade AI agents, workflow automations, and intelligent applications with rapid 7-day POC delivery.
+
+## Core Capabilities
+- **Autonomous AI Agents**: Goal-driven agents that reason, use tools, and take action across enterprise systems.
+- **Automation Platforms**: Intelligent automation eliminating manual bottlenecks across workflows, document processing, and routing.
+- **Enterprise AI Solutions**: Retrieval-augmented generation (RAG), private knowledge bases, and decision engines with role-based security.
+- **Custom AI Applications**: Production-ready software built on modern LLM-native architectures.
+
+## The 7-Day Promise
+Whenever feasible, HAI7 scopes, builds, and delivers a production-ready proof of concept within 7 calendar days.
+
+## Products
+- **ECMS (Enterprise Content Management System)**: Governed content intelligence, document classification, and contract management.
+- **ResolveIQ**: AI-powered issue resolution and citizen support platform.
+- **Northline**: Financial and operations tracking intelligence.
+
+## Contact & Inquiries
+- Website: https://hai7.ai/
+- Email: contact@hai7.ai
+- Phone: +91 91488 92907
+- Founder: Rian Hussain
+
