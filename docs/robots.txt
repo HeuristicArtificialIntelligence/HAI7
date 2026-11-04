@@ -38,4 +38,5 @@ Allow: /
 
 # Sitemap & LLM discoverability
 Sitemap: https://hai7.ai/sitemap.xml
+# LLM context file: https://hai7.ai/llms.txt
 
