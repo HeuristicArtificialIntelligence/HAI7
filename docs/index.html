@@ -10,6 +10,21 @@
     <meta name="apple-mobile-web-app-title" content="HAI7" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#030712" />
+    <style>
+        /* Hide crawl-only HTML before app CSS loads (avoids flash of SEO strip above hero) */
+        .hai7-seo-crawl-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            clip-path: inset(50%);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="author" content="HAI7 - Heuristic Artificial Intelligence" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -164,25 +179,25 @@
     }
     </script>
   
-  <link rel="stylesheet" href="/assets/style-CUvBiQgR.css">
+  <link rel="stylesheet" href="/assets/style-Cib7DiTn.css">
 </head>
 
 <body>
-    <!-- Crawlable policy links (GitHub Pages + SEO tools read HTML before/without full JS) -->
-    <nav id="site-policy-nav" class="hai7-seo-static-nav" aria-label="Site policies and contact">
-        <a href="/about">About HAI7</a>
-        <a href="/contact-us">Contact Us</a>
-        <a href="/privacy-policy">Privacy Policy</a>
-        <a href="/terms-of-service">Terms of Service</a>
-        <a href="/terms-of-service#editorial">Editorial Policy</a>
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://hai7.ai/">Share on LinkedIn</a>
-        <a href="https://twitter.com/intent/tweet?url=https://hai7.ai/">Share on X</a>
-    </nav>
-    <p class="hai7-seo-static-meta">
-        By Rian Hussain, Founder — AI engineering &amp; enterprise delivery.
-        <time datetime="2026-11-04">Updated November 4, 2026</time>
-    </p>
-    <div class="hai7-seo-static-body">
+    <!-- In HTML for crawlers / no-JS; not shown when the app loads (see .hai7-seo-crawl-only) -->
+    <div class="hai7-seo-crawl-only">
+        <nav id="site-policy-nav" aria-label="Site policies and contact">
+            <a href="/about">About HAI7</a>
+            <a href="/contact-us">Contact Us</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
+            <a href="/terms-of-service#editorial">Editorial Policy</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://hai7.ai/">Share on LinkedIn</a>
+            <a href="https://twitter.com/intent/tweet?url=https://hai7.ai/">Share on X</a>
+        </nav>
+        <p>
+            By Rian Hussain, Founder — AI engineering and enterprise delivery.
+            <time datetime="2026-11-04">Updated November 4, 2026</time>
+        </p>
         <p>
             HAI7 (Heuristic Artificial Intelligence) helps enterprises ship useful AI fast: autonomous agents,
             workflow automation, retrieval-augmented copilots, and custom applications integrated with your cloud
