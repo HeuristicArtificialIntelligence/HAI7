@@ -5,15 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HAI7 - Redirecting...</title>
   <script>
-    // Preserve path and redirect to home route
-    const path = window.location.pathname;
-    const search = window.location.search;
-    const hash = window.location.hash;
-    window.location.replace('/#' + path + search + hash);
+    // GitHub Pages SPA fallback — preserve path without hash (BrowserRouter).
+    // https://github.com/rafgraph/spa-github-pages
+    var pathSegmentsToKeep = 0;
+    var l = window.location;
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
   </script>
 </head>
 <body style="background:#030712;color:#94a3b8;font-family:sans-serif;display:grid;place-items:center;height:100vh;margin:0;">
   <p>Redirecting to HAI7...</p>
 </body>
 </html>
-

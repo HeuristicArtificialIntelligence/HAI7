@@ -2,6 +2,23 @@
 <html lang="en">
 
 <head>
+    <script>
+        // Restore clean URLs after GitHub Pages 404 → /?/path redirect (see public/404.html).
+        (function (l) {
+            if (l.search[1] === '/') {
+                var decoded = l.search.slice(1).split('&').map(function (s) {
+                    return s.replace(/~and~/g, '&');
+                }).join('?');
+                window.history.replaceState(null, '', l.pathname.slice(0, -1) + decoded + l.hash);
+            }
+        }(window.location));
+        // Legacy hash routes (#/revenue/...) → path URLs for BrowserRouter.
+        (function (l) {
+            if (l.hash.startsWith('#/') && l.hash.length > 2) {
+                window.history.replaceState(null, '', l.hash.slice(1) + l.search);
+            }
+        }(window.location));
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
     <meta name="mobile-web-app-capable" content="yes" />
