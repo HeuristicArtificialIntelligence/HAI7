@@ -31,6 +31,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://hai7.ai/revenue/2024-2025</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.35</priority>
+  </url>
+  <url>
     <loc>https://hai7.ai/products</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
